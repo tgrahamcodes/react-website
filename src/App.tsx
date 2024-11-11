@@ -6,15 +6,12 @@ import './App.css';
 
 function App() {
   return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-            <p>
-              (not really)
-            </p>
-            <Nav></Nav>
-        </header>
-      </div>
+        <nav className="navbar bg-body-tertiary">
+          <form className="container-fluid justify-content-start">
+            <button className="btn btn-outline-success me-2" type="button">Main button</button>
+            <button className="btn btn-sm btn-outline-secondary" type="button">Smaller button</button>
+          </form>
+          </nav>
   );
 }
 

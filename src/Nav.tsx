@@ -3,16 +3,11 @@ import React from 'react';
 
 const Nav = () => {
   return (
-    <nav className="navbar">
-      <div className="navbar-logo">
-        <a href="/">MyWebsite</a>
-      </div>
-      <ul className="navbar-links">
-        <li><a href="/software-engineer">Software Engineer</a></li>
-        <li><a href="/cybersecurity">Cyber Security</a></li>
-        <li><a href="/art">Art</a></li>
-        <li><a href="/graphic-design">Graphic Design</a></li>
-      </ul>
+    <nav className="navbar bg-body-tertiary">
+      <form className="container-fluid justify-content-start">
+        <button className="btn btn-outline-success me-2" type="button">Main button</button>
+        <button className="btn btn-sm btn-outline-secondary" type="button">Smaller button</button>
+      </form>
     </nav>
   );
 };
