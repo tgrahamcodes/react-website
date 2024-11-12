@@ -1,18 +1,24 @@
 import React from 'react';
-import logo from './logo.webp';
-import Nav from './Nav';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Nav from './components/Nav/Nav';
+import SoftwareDevelopment from './components/Nav/SoftwareDevelopment/SoftwareDevelopment';
+import CyberSecurity from './components/Nav/CyberSecurity/CyberSecurity';
+import Art from './components/Nav/Art/Art'
+import GraphicDesign from './components/Nav/Graphic Design/GraphicDesign';
 
-import './App.css';
-
-function App() {
+const App: React.FC = () => {
   return (
-        <nav className="navbar bg-body-tertiary">
-          <form className="container-fluid justify-content-start">
-            <button className="btn btn-outline-success me-2" type="button">Main button</button>
-            <button className="btn btn-sm btn-outline-secondary" type="button">Smaller button</button>
-          </form>
-          </nav>
+    <Router>
+      <Nav />
+      <h1> App </h1>
+      <Routes>
+        <Route path="/software-engineer" element={<SoftwareDevelopment />} />
+        <Route path="/cyber-security" element={<CyberSecurity />} />
+        <Route path="/art" element={<Art />} />
+        <Route path="/graphic-design" element={<GraphicDesign />} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;
