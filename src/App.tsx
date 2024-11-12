@@ -7,17 +7,19 @@ import Art from './components/Nav/Art/Art'
 import GraphicDesign from './components/Nav/Graphic Design/GraphicDesign';
 
 const App: React.FC = () => {
+// This function returns the Nav bar to the root page
   return (
+    <div className="app-container">
     <Router>
       <Nav />
-      <h1> App </h1>
       <Routes>
-        <Route path="/software-engineer" element={<SoftwareDevelopment />} />
+        <Route path="/software-development" element={<SoftwareDevelopment />} />
         <Route path="/cyber-security" element={<CyberSecurity />} />
         <Route path="/art" element={<Art />} />
         <Route path="/graphic-design" element={<GraphicDesign />} />
       </Routes>
     </Router>
+    </div>
   );
 };
 

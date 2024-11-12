@@ -22,3 +22,12 @@ test('sets the document title', () => {
 
   expect(document.title).toBe('Software Development');
 });
+
+test('renders SoftwareDevelopment component successfully', () => {
+  // Render the component and expect it not to throw any errors
+  const { container } = render(<SoftwareDevelopment />);
+  
+  // Check if the container is defined, which indicates successful rendering
+  expect(container).toBeDefined();
+  expect(container).not.toBeEmptyDOMElement();
+});

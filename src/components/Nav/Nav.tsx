@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 
 const Nav: React.FC = () => {
   return (
+    <>
+    <link rel="stylesheet" href="Nav.scss" />
     <nav className="navbar bg-body-tertiary">
       <div className="container d-flex justify-content-center">
         <form className="d-flex">
@@ -29,6 +31,7 @@ const Nav: React.FC = () => {
         </form>
       </div>
     </nav>
+    </>
   );
 };
 
