@@ -1,24 +1,25 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Header from './components/Header/Header'
 import Nav from './components/Nav/Nav';
-import SoftwareDevelopment from './components/Nav/SoftwareDevelopment/SoftwareDevelopment';
-import CyberSecurity from './components/Nav/CyberSecurity/CyberSecurity';
-import Art from './components/Nav/Art/Art'
-import GraphicDesign from './components/Nav/Graphic Design/GraphicDesign';
+import Footer from './components/Footer/Footer';
+import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import Programs from './components/Nav/Programs/Programs';
+import Treatment from './components/Nav/Treatment/Treatment';
+import Insurance from './components/Nav/Insurance/Insurance';
+import Contact from './components/Nav/Contact/Contact';
 
 const App: React.FC = () => {
-// This function returns the Nav bar to the root page
   return (
     <div className="app-container">
-    <Router>
       <Nav />
       <Routes>
-        <Route path="/software-development" element={<SoftwareDevelopment />} />
-        <Route path="/cyber-security" element={<CyberSecurity />} />
-        <Route path="/art" element={<Art />} />
-        <Route path="/graphic-design" element={<GraphicDesign />} />
+
+        <Route path="/programs" element={<Programs />} />
+        <Route path="/treatment" element={<Treatment />} />
+        <Route path="/insurance" element={<Insurance />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
-    </Router>
     </div>
   );
 };

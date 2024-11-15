@@ -1,12 +1,12 @@
 import React from 'react';
 
-const GraphicDesign: React.FC = () => {
+const Contact: React.FC = () => {
   return (
     <>
-      <header><title>Graphic Design</title></header>
+      <header><title>Contact</title></header>
       <div className="jumbotron jumbotron-fluid">
         <div className="container">
-          <h1 className="display-4">Graphic Design</h1>
+          <h1 className="display-4">Contact</h1>
           <p className="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
       </div>
@@ -14,4 +14,4 @@ const GraphicDesign: React.FC = () => {
   );
 };
 
-export default GraphicDesign;
+export default Contact;

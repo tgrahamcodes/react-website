@@ -1,37 +1,30 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './Nav.scss';
 
 const Nav: React.FC = () => {
   return (
-    <>
-    <link rel="stylesheet" href="Nav.scss" />
     <nav className="navbar bg-body-tertiary">
       <div className="container d-flex justify-content-center">
         <form className="d-flex">
-          <Link to="/software-development">
-            <button className="btn btn-outline-primary me-2" type="button">
-              Software Development
-            </button>
+          <Link to="/" className="btn btn-outline-primary me-2">
+            Home
           </Link>
-          <Link to="/cyber-security">
-            <button className="btn btn-outline-primary me-2" type="button">
-              Cyber Security
-            </button>
+          <Link to="/programs" className="btn btn-outline-primary me-2">
+            Programs
           </Link>
-          <Link to="/art">
-            <button className="btn btn-outline-primary me-2" type="button">
-              Art
-            </button>
+          <Link to="/treatment" className="btn btn-outline-primary me-2">
+            Treatment
           </Link>
-          <Link to="/graphic-design">
-            <button className="btn btn-outline-primary" type="button">
-              Graphic Design
-            </button>
+          <Link to="/insurance" className="btn btn-outline-primary me-2">
+            Insurance
+          </Link>
+          <Link to="/contact" className="btn btn-outline-primary">
+            Contact
           </Link>
         </form>
       </div>
     </nav>
-    </>
   );
 };
 
