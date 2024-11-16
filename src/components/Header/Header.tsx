@@ -1,17 +1,12 @@
 import React from 'react';
+import logo from '../../logo.webp'
+
 
 const Header: React.FC = () => {
-  return (
-    <nav>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/programs">Programs</a></li>
-        <li><a href="/treatment">Treatment</a></li>
-        {/* <li><a href="/tour">Tour</a></li> */}
-        <li><a href="/insurance">Insurance</a></li>
-        <li><a href="/contact">Contact</a></li>
-      </ul>
-    </nav>
+  return ( 
+    <div className="container d-flex flex-column align-items-center text-center py-5">
+      <img src={logo} width="25%" alt="Aura Wellness Logo" />
+    </div>
   );
 };
 

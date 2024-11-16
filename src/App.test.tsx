@@ -9,6 +9,7 @@ test('renders Aura Wellness link', () => {
       <App />
     </MemoryRouter>
   );
-  const linkElement = screen.getByText(/Aura Wellness/i);
-  expect(linkElement).toBeInTheDocument();
+  const titleElement = screen.getByTitle(/Aura Wellness/i);
+  console.log("0000000000000000000000", titleElement)
+  expect(titleElement).toBeInTheDocument();
 });
