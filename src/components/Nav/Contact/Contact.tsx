@@ -3,10 +3,8 @@ import React from 'react';
 const Contact: React.FC = () => {
   return (
     <>
-      <div className="container d-flex flex-column align-items-center text-center py-5">
-        <header>
-          <title>Contact</title>
-        </header>
+      <div className="container d-flex flex-column align-items-center section-container text-center">
+        <header><title>Contact</title></header>
         <form className="row g-3">
           <div className="col-md-6">
             <label htmlFor="inputEmail4" className="form-label">Email</label>

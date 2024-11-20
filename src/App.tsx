@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import './App.css';
+import './App.scss';
 import Contact from './components/Nav/Contact/Contact';
 import Insurance from './components/Nav/Insurance/Insurance';
 import Nav from './components/Nav/Nav';

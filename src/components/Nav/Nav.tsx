@@ -5,7 +5,7 @@ import './Nav.scss';
 const Nav: React.FC = () => {
   return (
     <>
-      <nav className="navbar bg-body-tertiary" aria-label="Main navigation">
+      <nav className="navbar bg-body-tertiary py-4" aria-label="Main navigation">
         <div className="container d-flex justify-content-center">
           <form className="d-flex">
             <Link to="/" className="btn btn-outline-primary me-2" aria-label="Home">

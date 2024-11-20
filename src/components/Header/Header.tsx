@@ -1,7 +1,6 @@
 import React from 'react';
 import logo from '../../logo.webp'
 
-
 const Header: React.FC = () => {
   return ( 
     <div className="container d-flex flex-column align-items-center text-center py-5">
