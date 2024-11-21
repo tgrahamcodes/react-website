@@ -13,6 +13,7 @@ const App: React.FC = () => {
   return (
     <>
     <div className="app-container">
+      <title>Aura Wellness</title>
       <Header />
       <Nav />
       <Routes>

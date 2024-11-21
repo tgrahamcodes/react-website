@@ -1,0 +1,47 @@
+// Global stylesheet for entire application
+
+@import '~bootstrap/scss/bootstrap'; // Import Bootstrap SCSS
+
+// Custom overrides
+$primary: white; // Example: Change the primary color
+$green: #11A997;
+$gray: #D3D7CF;
+
+$dark: black;
+$light: white;
+
+body {
+  background-color: $gray;
+}
+
+.navbar {
+  background-color: $gray !important;
+}
+
+.btn-outline-primary {
+  background-color: $light !important;
+  color: $dark !important;
+  border-color: darken($green, 10%) !important;
+
+  &:hover {
+    background-color: $green !important;
+    color: $white !important;
+    border-color: darken($white, 10%) !important;
+  }
+}
+
+.content-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  min-height: 50vh;      /* Full viewport height */
+  background-color: #f8f9fa; /* Optional: Add a light background color */
+  padding: 2rem;          /* Optional: Add padding for spacing */
+  text-align: center;     /* Center text within the container */
+}
+
+.content-wrapper {
+  max-width: 600px;     /* Limit the width of the content */
+  width: 100%;          /* Ensure responsiveness */
+  margin: 0 auto;       /* Center horizontally */
+  text-align: center;   /* Center the text within */
+}
