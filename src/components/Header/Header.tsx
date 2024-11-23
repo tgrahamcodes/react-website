@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../logo.webp'
+import logo from '../../assets/logo.webp'
 
 const Header: React.FC = () => {
   return ( 

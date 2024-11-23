@@ -2,11 +2,11 @@ import React from 'react';
 
 const Footer: React.FC = () => {
   return (
-    <div className="container d-flex flex-column align-items-center text-center py-lg-5">
-      <footer>
-        <p>&copy; 2024 Aura Wellness. All rights reserved.</p>
-      </footer>
-    </div>
+    <nav className="navbar bg-body-tertiary py-4" aria-label="Main navigation">
+      <div className="container d-flex justify-content-center">
+        <footer>&copy; 2024 Aura Wellness. All rights reserved.</footer>
+      </div>
+    </nav>
   );
 };
 
