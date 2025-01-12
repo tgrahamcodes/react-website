@@ -39,9 +39,7 @@ body {
   text-align: center;     /* Center text within the container */
 }
 
-.content-wrapper {
-  max-width: 600px;     /* Limit the width of the content */
-  width: 100%;          /* Ensure responsiveness */
-  margin: 0 auto;       /* Center horizontally */
-  text-align: center;   /* Center the text within */
+.image-container {
+	padding: 2em !important;
+	margin: 2em !important;
 }
